@@ -18,7 +18,8 @@ public class Troll extends Enemy implements IEquip, ICharacter{
 	}
 
 	public void use(ArrayList<ICharacter> players){
-
+		double damage = Math.max(this.weapon.getDamage() - players.get(0).getArmourRating(),0);
+		players.get(0).changeHealth(damage);
 	}
 
 	@Override

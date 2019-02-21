@@ -49,7 +49,7 @@ public class Fighter extends Players implements IEquip, ICharacter{
 
 	@Override
 	public void changeHealth(double change) {
-		this.hp += change;
+		this.hp -= change;
 	}
 
 	@Override
