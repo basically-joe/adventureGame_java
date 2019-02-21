@@ -73,6 +73,7 @@ public class Room {
 			if(heroIndex>=0) {
 				IEquip playerFight = (IEquip) players.get(heroIndex);
 				playerFight.use(enemies);
+				System.out.println("Player hits enemy");
 
 				enemyIndex -= playerFight.getKillCount();
 			}
@@ -80,6 +81,7 @@ public class Room {
 			if(enemyIndex>=0) {
 				IEquip enemyFight = (IEquip) enemies.get(enemyIndex);
 				enemyFight.use(players);
+				System.out.println("Enemy hits player");
 
 				heroIndex -= enemyFight.getKillCount();
 			}

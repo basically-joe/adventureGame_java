@@ -19,7 +19,7 @@ public class RoomTest {
 
 	@Before
 	public void before() {
-		weapon = new Weapon("Sword", 150);
+		weapon = new Weapon("Sword", 50);
 		weapon2 = new Weapon("Club", 10);
 		armour = new Armour("Heavy", 60);
 		fighter = new Fighter("Conan", "Barbarian", weapon, armour);

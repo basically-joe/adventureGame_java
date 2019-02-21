@@ -61,6 +61,7 @@ public class Fighter extends Players implements IEquip, ICharacter, IMoney{
 	public void use(ArrayList<ICharacter> characters) {
 		double damage = Math.max(this.weapon.getDamage() - characters.get(0).getArmourRating(),0);
 		characters.get(0).changeHealth(damage);
+
 		if (characters.get(0).getHP()<=0){
 			characters.remove(0);
 			this.changeKillCount(1);
