@@ -21,4 +21,9 @@ public class FighterTest {
 		assertEquals("Conan", fighter.getName());
 	}
 
+	@Test
+	public void canGetType(){
+		assertEquals("Barbarian", fighter.getType());
+	}
+
 }
