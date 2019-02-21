@@ -1,4 +1,6 @@
-public class Troll extends Enemy {
+import java.util.ArrayList;
+
+public class Troll extends Enemy implements IEquip, ICharacter{
 
 	Weapon weapon;
 
@@ -13,5 +15,24 @@ public class Troll extends Enemy {
 
 	public void setWeapon(Weapon weapon) {
 		this.weapon = weapon;
+	}
+
+	public void use(ArrayList<ICharacter> players){
+
+	}
+
+	@Override
+	public double getHP() {
+		return this.hp;
+	}
+
+	@Override
+	public double getArmourRating() {
+		return 0;
+	}
+
+	@Override
+	public void changeHealth(double change) {
+		this.hp -= change;
 	}
 }

@@ -16,12 +16,12 @@ public class TrollTest {
 
 	@Test
 	public void canGetHP(){
-		assertEquals(50, troll.getHp());
+		assertEquals(50, troll.getHp(), 0.01);
 	}
 
 	@Test
 	public void canGetWeapon(){
-		assertEquals(50, troll.getWeapon().getDamage());
+		assertEquals(10, troll.getWeapon().getDamage());
 	}
 
 }
