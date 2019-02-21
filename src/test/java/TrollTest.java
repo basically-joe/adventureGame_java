@@ -9,6 +9,7 @@ public class TrollTest {
 
 	Troll troll;
 	Weapon weapon;
+	Weapon weapon2;
 	Fighter fighter;
 	Armour armour;
 	ArrayList<ICharacter> players;
@@ -17,8 +18,9 @@ public class TrollTest {
 	public void before() {
 		weapon = new Weapon("Club", 10);
 		troll = new Troll(50, weapon);
-		weapon = new Weapon("Deatheater", 20);
-		fighter = new Fighter("Conan", "Barbarian", weapon, armour);
+		weapon2 = new Weapon("Deatheater", 20);
+		armour = new Armour("Heavy", 60);
+		fighter = new Fighter("Conan", "Barbarian", weapon2, armour);
 		players = new ArrayList<>();
 		players.add(fighter);
 	}
@@ -31,6 +33,12 @@ public class TrollTest {
 	@Test
 	public void canGetWeapon(){
 		assertEquals(10, troll.getWeapon().getDamage());
+	}
+
+	@Test
+	public void canUseWeapnOnTroll(){
+		troll.use(players);
+		assertEquals(100, fighter.getHP(), 0.01);
 	}
 
 }
