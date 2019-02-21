@@ -99,7 +99,7 @@ public class Room {
 	}
 
 	public void gameOver(){
-		System.out.println("Game Over");
+		System.out.println("Game Over, the baddies win!");
 	}
 
 

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70d060b7-ee09-49bd-94b3-6923a63932e0" name="Default Changelist" comment="" />
+    <list default="true" id="70d060b7-ee09-49bd-94b3-6923a63932e0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Caster.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Caster.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Caster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Caster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -17,12 +23,21 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Players.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-328">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Fighter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="365">
+              <caret line="77" column="34" lean-forward="true" selection-start-line="77" selection-end-line="78" />
             </state>
           </provider>
         </entry>
@@ -30,44 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Caster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Troll.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Enemy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Room.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RoomTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+            <state relative-caret-position="395">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
             </state>
           </provider>
         </entry>
@@ -95,7 +74,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Armour.java" />
         <option value="$PROJECT_DIR$/src/main/java/Spell.java" />
         <option value="$PROJECT_DIR$/src/main/java/Animal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Caster.java" />
         <option value="$PROJECT_DIR$/src/test/java/CasterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/HealingTool.java" />
         <option value="$PROJECT_DIR$/src/main/java/Healer.java" />
@@ -109,10 +87,11 @@
         <option value="$PROJECT_DIR$/src/main/java/Players.java" />
         <option value="$PROJECT_DIR$/src/main/java/IEquip.java" />
         <option value="$PROJECT_DIR$/src/main/java/Enemy.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RoomTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Troll.java" />
         <option value="$PROJECT_DIR$/src/main/java/Fighter.java" />
         <option value="$PROJECT_DIR$/src/main/java/Room.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RoomTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Caster.java" />
       </list>
     </option>
   </component>
@@ -128,8 +107,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,10 +149,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550763156296" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550763522900" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -265,15 +244,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FighterTest_canDamageTroll - 2019.02.21 at 13h 59m 30s.xml">
-      <configuration name="FighterTest.canDamageTroll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_com_example_FantasyAdventureGame_test - 2019.02.21 at 14h 08m 19s.xml">
-      <configuration name="All in com.example.FantasyAdventureGame.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_com_example_FantasyAdventureGame_test - 2019.02.21 at 14h 12m 04s.xml">
-      <configuration name="All in com.example.FantasyAdventureGame.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_com_example_FantasyAdventureGame_test - 2019.02.21 at 14h 12m 18s.xml">
       <configuration name="All in com.example.FantasyAdventureGame.test" configurationId="JUnit" />
     </history-entry>
@@ -295,6 +265,15 @@
     <history-entry file="All_in_com_example_FantasyAdventureGame_test - 2019.02.21 at 15h 30m 42s.xml">
       <configuration name="All in com.example.FantasyAdventureGame.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_com_example_FantasyAdventureGame_test - 2019.02.21 at 15h 35m 38s.xml">
+      <configuration name="All in com.example.FantasyAdventureGame.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_com_example_FantasyAdventureGame_test - 2019.02.21 at 19h 49m 10s.xml">
+      <configuration name="All in com.example.FantasyAdventureGame.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_com_example_FantasyAdventureGame_test - 2019.02.21 at 19h 58m 34s.xml">
+      <configuration name="All in com.example.FantasyAdventureGame.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -305,7 +284,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -314,7 +293,7 @@
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32650602" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.3253012" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -401,41 +380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ICharacter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Caster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/IEquip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Players.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Enemy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FighterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -443,10 +387,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RoomTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Enemy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -457,17 +401,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Fighter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/IEquip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="105">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Room.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+        <state relative-caret-position="1515">
+          <caret line="101" column="55" selection-start-line="101" selection-start-column="55" selection-end-line="101" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RoomTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ICharacter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Players.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-328">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Caster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Fighter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="77" column="34" lean-forward="true" selection-start-line="77" selection-end-line="78" />
         </state>
       </provider>
     </entry>
