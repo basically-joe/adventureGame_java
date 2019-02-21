@@ -6,11 +6,11 @@ public abstract class Players {
 	protected double xp;
 
 
-	public Players(String name, double hp, double mp, double xp) {
+	public Players(String name) {
 		this.name = name;
-		this.hp = hp;
-		this.mp = mp;
-		this.xp = xp;
+		this.hp = 100;
+		this.mp = 100;
+		this.xp = 0;
 	}
 
 	public String getName() {
