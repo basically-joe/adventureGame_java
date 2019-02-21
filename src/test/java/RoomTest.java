@@ -35,24 +35,25 @@ public class RoomTest {
 		playersFighter = new ArrayList<>();
 		playersFighter.add(fighter);
 		room = new Room(playersFighter, enemies, 1000);
+		spell = new Spell("Doom", 40,2);
+		animal = new Animal("Wyvern", 35);
 		caster = new Caster("Merlin", "Wizard", spell, animal);
 		playersCaster = new ArrayList<>();
 		playersCaster.add(caster);
 		room2 = new Room(playersCaster, enemies, 1000);
-		spell = new Spell("Doom", 40,2);
-		animal = new Animal("Wyvern", 35);
+
 
 	}
 
-//	@Test
-//	public void roomActionFighter(){
-//		room.action();
-//		assertEquals(1050, fighter.getMoneyInPouch(), 0.1);
-//	}
+	@Test
+	public void roomActionFighter(){
+		room.action();
+		assertEquals(1050, fighter.getMoneyInPouch(), 0.1);
+	}
 
 	@Test
 	public void roomActionCaster(){
-		room.action();
+		room2.action();
 		assertEquals(1050, caster.getMoneyInPouch(), 0.1);
 	}
 
