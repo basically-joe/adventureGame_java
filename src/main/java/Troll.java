@@ -20,6 +20,9 @@ public class Troll extends Enemy implements IEquip, ICharacter{
 	public void use(ArrayList<ICharacter> players){
 		double damage = Math.max(this.weapon.getDamage() - players.get(0).getArmourRating(),0);
 		players.get(0).changeHealth(damage);
+		if (players.get(0).getHP()<=0){
+			players.remove(0);
+		}
 	}
 
 	@Override
@@ -35,5 +38,17 @@ public class Troll extends Enemy implements IEquip, ICharacter{
 	@Override
 	public void changeHealth(double change) {
 		this.hp -= change;
+	}
+
+	public void changeKillCount(int change){
+		this.killCount += change;
+	}
+
+	public void resetKillCount(){
+		this.killCount = 0;
+	}
+
+	public int getKillCount(){
+		return this.killCount;
 	}
 }

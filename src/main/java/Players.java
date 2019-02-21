@@ -4,6 +4,8 @@ public abstract class Players {
 	protected double hp;
 	protected double mp;
 	protected double xp;
+	protected double moneyPouch;
+	protected int killCount;
 
 
 	public Players(String name) {
@@ -11,6 +13,8 @@ public abstract class Players {
 		this.hp = 100;
 		this.mp = 100;
 		this.xp = 0;
+		this.moneyPouch = 50;
+		this.killCount = 0;
 	}
 
 	public String getName() {
@@ -44,4 +48,10 @@ public abstract class Players {
 	public void setXp(double xp) {
 		this.xp = xp;
 	}
+
+	public double getMoneyPouch() {
+		return moneyPouch;
+	}
+
+
 }
