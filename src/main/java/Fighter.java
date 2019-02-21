@@ -1,10 +1,10 @@
-public class Fighter extends Players implements IWeapon, IArmour{
+public class Fighter extends Players {
 
 	private String type;
-	private IWeapon weapon;
-	private IArmour armour;
+	private Weapon weapon;
+	private Armour armour;
 
-	public Fighter(String name, String type, IWeapon weapon, IArmour armour) {
+	public Fighter(String name, String type, Weapon weapon, Armour armour) {
 		super(name);
 		this.type = type;
 		this.weapon = weapon;
@@ -19,19 +19,19 @@ public class Fighter extends Players implements IWeapon, IArmour{
 		this.type = type;
 	}
 
-	public IWeapon getWeapon() {
+	public Weapon getWeapon() {
 		return weapon;
 	}
 
-	public void setWeapon(IWeapon weapon) {
+	public void setWeapon(Weapon weapon) {
 		this.weapon = weapon;
 	}
 
-	public IArmour getArmour() {
+	public Armour getArmour() {
 		return armour;
 	}
 
-	public void setArmour(IArmour armour) {
+	public void setArmour(Armour armour) {
 		this.armour = armour;
 	}
 }
