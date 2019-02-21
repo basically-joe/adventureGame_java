@@ -9,17 +9,22 @@ public class RoomTest {
 
 	Room room;
 	Room room2;
+	Room room3;
 	Troll troll;
+	Troll troll2;
 	Fighter fighter;
 	Caster caster;
 	Weapon weapon;
 	Weapon weapon2;
+	Weapon weapon3;
 	Armour armour;
 	Spell spell;
 	Animal animal;
 	ArrayList<ICharacter> enemies;
 	ArrayList<ICharacter> playersFighter;
 	ArrayList<ICharacter> playersCaster;
+	ArrayList<ICharacter> enemiesHard;
+
 
 
 
@@ -27,9 +32,13 @@ public class RoomTest {
 	public void before() {
 		weapon = new Weapon("Sword", 50);
 		weapon2 = new Weapon("Club", 10);
+		weapon3 = new Weapon("Mega Mace", 100);
 		armour = new Armour("Heavy", 60);
 		fighter = new Fighter("Conan", "Barbarian", weapon, armour);
 		troll = new Troll(100, weapon2);
+		troll2 = new Troll(500, weapon3);
+		enemiesHard = new ArrayList<>();
+		enemiesHard.add(troll2);
 		enemies = new ArrayList<>();
 		enemies.add(troll);
 		playersFighter = new ArrayList<>();
@@ -40,8 +49,8 @@ public class RoomTest {
 		caster = new Caster("Merlin", "Wizard", spell, animal);
 		playersCaster = new ArrayList<>();
 		playersCaster.add(caster);
-		room2 = new Room(playersCaster, enemies, 1000);
-
+		room2 = new Room(playersCaster, enemies, 1500);
+		room3 = new Room(playersCaster, enemiesHard, 1500);
 
 	}
 
@@ -54,7 +63,13 @@ public class RoomTest {
 	@Test
 	public void roomActionCaster(){
 		room2.action();
-		assertEquals(1050, caster.getMoneyInPouch(), 0.1);
+		assertEquals(1550, caster.getMoneyInPouch(), 0.1);
+	}
+
+	@Test
+	public void roomActionEnemyWins(){
+		room3.action();
+		assertEquals(50, caster.getMoneyInPouch(), 0.1);
 	}
 
 }

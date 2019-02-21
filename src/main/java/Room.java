@@ -95,11 +95,12 @@ public class Room {
 			gameOver();
 		} else {
 			claimTreasure();
+			System.out.println("The heroes defeated the enemies and won some treasure");
 		}
 	}
 
 	public void gameOver(){
-		System.out.println("Game Over, the baddies win!");
+		System.out.println("Game Over! The baddies win!");
 	}
 
 
