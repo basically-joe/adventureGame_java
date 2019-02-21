@@ -1,4 +1,7 @@
 import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class FighterTest {
 
@@ -13,6 +16,9 @@ public class FighterTest {
 		fighter = new Fighter("Conan", "Barbarian", weapon, armour);
 	}
 
-	
+	@Test
+	public void canGetName(){
+		assertEquals("Conan", fighter.getName());
+	}
 
 }
