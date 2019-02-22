@@ -1,25 +1,36 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 
 public class HealerTest {
 
 	Healer healer;
 	HealingTool healingTool;
+	Weapon weapon;
+	Weapon weapon2;
 	Armour armour;
+	Troll troll;
+	ArrayList<ICharacter> enemies;
 
 	@Before
 	public void before(){
+		weapon = new Weapon("Fists of Fury", 25);
+		weapon2 = new Weapon("Club", 10);
 		armour = new Armour("Cloak of Mystery", 80);
 		healingTool = new HealingTool("Staff of Healing", 20, 2, 5);
-		healer = new Healer("Jeff", "Elf", healingTool, armour);
+		healer = new Healer("House", "Elf", healingTool, weapon, armour);
+		troll = new Troll(100, weapon2);
+		enemies = new ArrayList<>();
+		enemies.add(troll);
 	}
 
 
 	@Test
 	public void getName(){
-		assertEquals("Jeff", healer.getName());
+		assertEquals("House", healer.getName());
 	}
 
 	@Test
@@ -49,5 +60,12 @@ public class HealerTest {
 	public void getArmour(){
 		assertEquals("Cloak of Mystery", healer.getArmour().getName());
 	}
+
+	@Test
+	public void healerCanDamageTroll(){
+		healer.use(enemies);
+		assertEquals(75, troll.getHP(), 0.01);
+	}
+
 
 }

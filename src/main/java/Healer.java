@@ -4,12 +4,14 @@ public class Healer extends Players implements ICharacter, IMoney, IEquip{
 
 	private String type;
 	private HealingTool healingTool;
+	private Weapon fistsOfFury;
 	private Armour armour;
 
-	public Healer(String name, String type, HealingTool healingTool, Armour armour) {
+	public Healer(String name, String type, HealingTool healingTool, Weapon fistsOfFury, Armour armour) {
 		super(name);
 		this.type = type;
 		this.healingTool = healingTool;
+		this.fistsOfFury = fistsOfFury;
 		this.armour = armour;
 	}
 
@@ -54,8 +56,8 @@ public class Healer extends Players implements ICharacter, IMoney, IEquip{
 
 	@Override
 	public void use(ArrayList<ICharacter> characters) {
-		double healing = Math.max(this.getHealingTool().getHealStrength() - characters.get(0).getArmourRating(),0);
-		characters.get(0).changeHealth(healing);
+		double damage = Math.max(this.fistsOfFury.getDamage() - characters.get(0).getArmourRating(),0);
+		characters.get(0).changeHealth(damage);
 
 		if (characters.get(0).getHP()<=0){
 			characters.remove(0);
@@ -86,5 +88,10 @@ public class Healer extends Players implements ICharacter, IMoney, IEquip{
 	@Override
 	public void changeMoneyInPouch(double change) {
 		this.moneyPouch += change;
+	}
+
+
+	public void healHeros(){
+
 	}
 }
