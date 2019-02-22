@@ -83,5 +83,10 @@ public class HealerTest {
 		assertEquals(140, healer.getHP(), 0.01);
 	}
 
+	@Test
+	public void healerCanHealCompanions(){
+		healer.increaseHealthViaHealerAbility(players);
+		assertEquals(120, healer.getHP(), 0.01);
+	}
 
 }

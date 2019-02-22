@@ -47,8 +47,12 @@ public class Healer extends Players implements ICharacter, IMoney, IEquip{
 		this.fistsOfFury = fistsOfFury;
 	}
 
+	public int getHealAmount(){
+		return -healingTool.getHealStrength();
+	}
+
 	public void healCharacter(){
-		int healthIncrease = -healingTool.getHealStrength();
+		int healthIncrease = getHealAmount();
 		changeHealth(healthIncrease);
 		removeMP();
 	}
@@ -83,6 +87,12 @@ public class Healer extends Players implements ICharacter, IMoney, IEquip{
 			characters.remove(0);
 			this.changeKillCount(1);
 		}
+	}
+
+	@Override
+	public void increaseHealthViaHealerAbility(ArrayList<ICharacter> characters) {
+		int healAmount = getHealAmount() / characters.size();
+		characters.get(0).changeHealth(healAmount);
 	}
 
 	@Override

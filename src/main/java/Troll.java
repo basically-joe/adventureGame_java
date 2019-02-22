@@ -27,6 +27,11 @@ public class Troll extends Enemy implements IEquip, ICharacter{
 	}
 
 	@Override
+	public void increaseHealthViaHealerAbility(ArrayList<ICharacter> characters) {
+
+	}
+
+	@Override
 	public double getHP() {
 		return this.hp;
 	}

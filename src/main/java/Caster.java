@@ -64,6 +64,11 @@ public class Caster extends Players implements ICharacter, IMoney, IEquip{
 	}
 
 	@Override
+	public void increaseHealthViaHealerAbility(ArrayList<ICharacter> characters) {
+
+	}
+
+	@Override
 	public void changeKillCount(int change) {
 		this.killCount += change;
 	}
