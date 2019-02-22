@@ -14,6 +14,7 @@ public class HealerTest {
 	Armour armour;
 	Troll troll;
 	ArrayList<ICharacter> enemies;
+	ArrayList<ICharacter> players;
 
 	@Before
 	public void before(){
@@ -25,6 +26,8 @@ public class HealerTest {
 		troll = new Troll(100, weapon2);
 		enemies = new ArrayList<>();
 		enemies.add(troll);
+		players = new ArrayList<>();
+		players.add(healer);
 	}
 
 
@@ -70,6 +73,14 @@ public class HealerTest {
 	public void healerCanDamageTroll(){
 		healer.useWeaponsTiInflictDamage(enemies);
 		assertEquals(75, troll.getHP(), 0.01);
+	}
+
+	@Test
+	public void healerCanHealHimself(){
+		healer.healCharacter();
+		healer.healCharacter();
+		assertEquals(90, healer.getMp(), 0.01);
+		assertEquals(140, healer.getHP(), 0.01);
 	}
 
 
