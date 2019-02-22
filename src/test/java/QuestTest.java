@@ -5,8 +5,9 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
-public class RoomTest {
+public class QuestTest {
 
+	Quest quest;
 	Room room;
 	Room room2;
 	Room room3;
@@ -29,6 +30,7 @@ public class RoomTest {
 	ArrayList<ICharacter> playersCaster;
 	ArrayList<ICharacter> playersHealer;
 	ArrayList<ICharacter> enemiesHard;
+	ArrayList<Room> roomsArray;
 
 	@Before
 	public void before() {
@@ -49,7 +51,6 @@ public class RoomTest {
 		enemies.add(troll);
 		playersFighter = new ArrayList<>();
 		playersFighter.add(fighter);
-		room = new Room(playersFighter, enemies, 1000);
 		spell = new Spell("Doom", 40,2);
 		animal = new Animal("Wyvern", 35);
 		caster = new Caster("Merlin", "Wizard", spell, animal);
@@ -57,33 +58,22 @@ public class RoomTest {
 		playersCaster.add(caster);
 		playersHealer = new ArrayList<>();
 		playersHealer.add(caster);
+		room = new Room(playersFighter, enemies, 1000);
 		room2 = new Room(playersCaster, enemies, 1500);
 		room3 = new Room(playersCaster, enemiesHard, 1500);
 		room4 = new Room(playersHealer, enemies, 1500);
+		roomsArray = new ArrayList<>();
+		roomsArray.add(room);
+		roomsArray.add(room2);
+		roomsArray.add(room3);
+		roomsArray.add(room4);
+		quest = new Quest(roomsArray);
+
 	}
 
 	@Test
-	public void roomActionFighterWins(){
-		room.action();
-		assertEquals(1050, fighter.getMoneyInPouch(), 0.1);
-	}
-
-	@Test
-	public void roomActionCasterWins(){
-		room2.action();
-		assertEquals(1550, caster.getMoneyInPouch(), 0.1);
-	}
-
-	@Test
-	public void roomActionEnemyWins(){
-		room3.action();
-		assertEquals(50, caster.getMoneyInPouch(), 0.1);
-	}
-
-	@Test
-	public void roomActionHealerWins(){
-		room4.action();
-		assertEquals(1550, caster.getMoneyInPouch(), 0.1);
+	public void canGetRooms(){
+		assertEquals(4, quest.roomsCount(roomsArray));
 	}
 
 }

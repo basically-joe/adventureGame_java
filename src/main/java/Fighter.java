@@ -69,11 +69,6 @@ public class Fighter extends Players implements IEquip, ICharacter, IMoney{
 	}
 
 	@Override
-	public void increaseHealthViaHealerAbility(ArrayList<ICharacter> characters) {
-
-	}
-
-	@Override
 	public double getMoneyInPouch() {
 		return this.moneyPouch;
 	}
