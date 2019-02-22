@@ -57,6 +57,11 @@ public class HealerTest {
 	}
 
 	@Test
+	public void canGetHealersWeapon(){
+		assertEquals("Fists of Fury", healer.getFistsOfFury().getName());
+	}
+
+	@Test
 	public void getArmour(){
 		assertEquals("Cloak of Mystery", healer.getArmour().getName());
 	}

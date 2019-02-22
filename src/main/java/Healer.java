@@ -39,6 +39,14 @@ public class Healer extends Players implements ICharacter, IMoney, IEquip{
 		this.armour = armour;
 	}
 
+	public Weapon getFistsOfFury() {
+		return fistsOfFury;
+	}
+
+	public void setFistsOfFury(Weapon fistsOfFury) {
+		this.fistsOfFury = fistsOfFury;
+	}
+
 	@Override
 	public double getHP() {
 		return this.hp;
