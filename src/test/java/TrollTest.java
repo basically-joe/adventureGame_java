@@ -37,7 +37,7 @@ public class TrollTest {
 
 	@Test
 	public void canUseWeapnOnTroll(){
-		troll.use(players);
+		troll.useWeaponsTiInflictDamage(players);
 		assertEquals(100, fighter.getHP(), 0.01);
 	}
 

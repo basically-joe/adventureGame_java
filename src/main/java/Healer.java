@@ -63,7 +63,7 @@ public class Healer extends Players implements ICharacter, IMoney, IEquip{
 	}
 
 	@Override
-	public void use(ArrayList<ICharacter> characters) {
+	public void useWeaponsTiInflictDamage(ArrayList<ICharacter> characters) {
 		double damage = Math.max(this.fistsOfFury.getDamage() - characters.get(0).getArmourRating(),0);
 		characters.get(0).changeHealth(damage);
 

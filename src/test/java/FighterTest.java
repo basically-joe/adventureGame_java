@@ -62,7 +62,7 @@ public class FighterTest {
 
 	@Test
 	public void canDamageTroll(){
-		fighter.use(enemies);
+		fighter.useWeaponsTiInflictDamage(enemies);
 		assertEquals(80, troll.getHP(), 0.01);
 	}
 

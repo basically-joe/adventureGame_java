@@ -58,7 +58,7 @@ public class Fighter extends Players implements IEquip, ICharacter, IMoney{
 	//updates the health of the enemy
 	//checks to see if the enemy's health has gone to zero.
 	//if it has then remove the enemy from the list and increase the kill count of the character aka use
-	public void use(ArrayList<ICharacter> characters) {
+	public void useWeaponsTiInflictDamage(ArrayList<ICharacter> characters) {
 		double damage = Math.max(this.weapon.getDamage() - characters.get(0).getArmourRating(),0);
 		characters.get(0).changeHealth(damage);
 

@@ -68,7 +68,7 @@ public class HealerTest {
 
 	@Test
 	public void healerCanDamageTroll(){
-		healer.use(enemies);
+		healer.useWeaponsTiInflictDamage(enemies);
 		assertEquals(75, troll.getHP(), 0.01);
 	}
 
