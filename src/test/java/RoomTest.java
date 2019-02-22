@@ -55,13 +55,13 @@ public class RoomTest {
 	}
 
 	@Test
-	public void roomActionFighter(){
+	public void roomActionFighterWins(){
 		room.action();
 		assertEquals(1050, fighter.getMoneyInPouch(), 0.1);
 	}
 
 	@Test
-	public void roomActionCaster(){
+	public void roomActionCasterWins(){
 		room2.action();
 		assertEquals(1550, caster.getMoneyInPouch(), 0.1);
 	}
