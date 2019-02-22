@@ -20,4 +20,10 @@ public class Quest {
 		return this.rooms.size();
 	}
 
+	public void runQuest(ArrayList<Room> rooms){
+		for (Room room : rooms) {
+			room.action();
+		}
+	}
+
 }

@@ -59,9 +59,9 @@ public class QuestTest {
 		playersHealer = new ArrayList<>();
 		playersHealer.add(caster);
 		room = new Room(playersFighter, enemies, 1000);
-		room2 = new Room(playersCaster, enemies, 1500);
-		room3 = new Room(playersCaster, enemiesHard, 1500);
-		room4 = new Room(playersHealer, enemies, 1500);
+		room2 = new Room(playersFighter, enemies, 1500);
+		room3 = new Room(playersFighter, enemies, 2000);
+		room4 = new Room(playersFighter, enemies, 3000);
 		roomsArray = new ArrayList<>();
 		roomsArray.add(room);
 		roomsArray.add(room2);
@@ -74,6 +74,12 @@ public class QuestTest {
 	@Test
 	public void canGetRooms(){
 		assertEquals(4, quest.roomsCount(roomsArray));
+	}
+
+	@Test
+	public void questRunsAndFighterWins(){
+		quest.runQuest(roomsArray);
+		assertEquals(7550, fighter.getMoneyInPouch(), 0.1);
 	}
 
 }
