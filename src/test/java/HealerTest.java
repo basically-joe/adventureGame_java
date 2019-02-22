@@ -8,13 +8,16 @@ import static org.junit.Assert.assertEquals;
 public class HealerTest {
 
 	Healer healer;
+	Fighter fighter;
 	HealingTool healingTool;
 	Weapon weapon;
 	Weapon weapon2;
+	Weapon weapon3;
 	Armour armour;
 	Troll troll;
 	ArrayList<ICharacter> enemies;
 	ArrayList<ICharacter> players;
+	ArrayList<ICharacter> players2;
 
 	@Before
 	public void before(){
@@ -28,6 +31,13 @@ public class HealerTest {
 		enemies.add(troll);
 		players = new ArrayList<>();
 		players.add(healer);
+
+		weapon3 = new Weapon("Deatheater", 20);
+		armour = new Armour("Heavy", 60);
+		fighter = new Fighter("Conan", "Barbarian", weapon3, armour);
+		players2 = new ArrayList<>();
+		players2.add(healer);
+		players2.add(fighter);
 	}
 
 
@@ -85,8 +95,9 @@ public class HealerTest {
 
 	@Test
 	public void healerCanHealCompanions(){
-		healer.increaseHealthViaHealerAbility(players);
-		assertEquals(120, healer.getHP(), 0.01);
+		healer.increaseHealthViaHealerAbility(players2);
+		assertEquals(110, healer.getHP(), 0.01);
+		assertEquals(110, fighter.getHP(), 0.01);
 	}
 
 }

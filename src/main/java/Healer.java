@@ -92,7 +92,9 @@ public class Healer extends Players implements ICharacter, IMoney, IEquip{
 	@Override
 	public void increaseHealthViaHealerAbility(ArrayList<ICharacter> characters) {
 		int healAmount = getHealAmount() / characters.size();
-		characters.get(0).changeHealth(healAmount);
+		for (ICharacter iCharacter : characters) {
+			iCharacter.changeHealth(healAmount);
+		}
 	}
 
 	@Override
